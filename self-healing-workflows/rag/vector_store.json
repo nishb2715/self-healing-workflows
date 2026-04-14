@@ -1,0 +1,46 @@
+[
+  {
+    "failure": "api_failure",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "schema_mismatch",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "ai_hallucination",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "api_failure",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "schema_mismatch",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "ai_hallucination",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "api_failure",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "schema_mismatch",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "api_failure",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "schema_mismatch",
+    "solution": "Recovered successfully"
+  },
+  {
+    "failure": "ai_hallucination",
+    "solution": "Recovered successfully"
+  }
+]

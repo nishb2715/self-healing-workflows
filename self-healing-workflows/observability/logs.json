@@ -1,0 +1,602 @@
+[
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['retry', 'fallback_api', 'validate']"
+  },
+  {
+    "step": "retry",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "fallback_api",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "validate",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "api_failure"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['detect_schema', 'llm_remap', 'validate']"
+  },
+  {
+    "step": "detect_schema",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "llm_remap",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "validate",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "schema_mismatch"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['generate', 'validate', 're_prompt']"
+  },
+  {
+    "step": "generate",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "validate",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "re_prompt",
+    "status": "RUNNING",
+    "details": "Executing step"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "ai_hallucination"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['retry', 'fallback_api', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing API workflow"
+  },
+  {
+    "step": "API",
+    "status": "START",
+    "details": "Calling primary API"
+  },
+  {
+    "step": "API",
+    "status": "SUCCESS",
+    "details": "Primary API worked"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "api_failure"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['detect_schema', 'llm_remap', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing Schema workflow"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "START",
+    "details": "Checking schema consistency"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "MISMATCH",
+    "details": "Unexpected field: agee"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "FIXED",
+    "details": "Mapped 'agee' \u2192 'age'"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "SUCCESS",
+    "details": "Final data: {'name': 'John', 'age': 25}"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "schema_mismatch"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['generate', 'validate', 're_prompt']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing AI workflow"
+  },
+  {
+    "step": "AI",
+    "status": "START",
+    "details": "Generating response"
+  },
+  {
+    "step": "AI",
+    "status": "GENERATED",
+    "details": "The capital of India is Mumbai"
+  },
+  {
+    "step": "AI",
+    "status": "HALLUCINATION",
+    "details": "Incorrect response detected"
+  },
+  {
+    "step": "AI",
+    "status": "CORRECTED",
+    "details": "The capital of India is New Delhi"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "ai_hallucination"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['retry', 'fallback_api', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing API workflow"
+  },
+  {
+    "step": "API",
+    "status": "START",
+    "details": "Calling primary API"
+  },
+  {
+    "step": "API",
+    "status": "SUCCESS",
+    "details": "Primary API worked"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "api_failure"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['detect_schema', 'llm_remap', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing Schema workflow"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "START",
+    "details": "Checking schema consistency"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "MISMATCH",
+    "details": "Unexpected field: agee"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "FIXED",
+    "details": "Mapped 'agee' \u2192 'age'"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "SUCCESS",
+    "details": "Final data: {'name': 'John', 'age': 25}"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "schema_mismatch"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['generate', 'validate', 're_prompt']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing AI workflow"
+  },
+  {
+    "step": "AI",
+    "status": "START",
+    "details": "Generating response"
+  },
+  {
+    "step": "AI",
+    "status": "GENERATED",
+    "details": "The capital of India is Mumbai"
+  },
+  {
+    "step": "AI",
+    "status": "HALLUCINATION",
+    "details": "Incorrect response detected"
+  },
+  {
+    "step": "AI",
+    "status": "CORRECTED",
+    "details": "The capital of India is New Delhi"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "ai_hallucination"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['retry', 'fallback_api', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing API workflow"
+  },
+  {
+    "step": "API",
+    "status": "START",
+    "details": "Calling primary API"
+  },
+  {
+    "step": "API",
+    "status": "SUCCESS",
+    "details": "Primary API worked"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "api_failure"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['detect_schema', 'llm_remap', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing Schema workflow"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "START",
+    "details": "Checking schema consistency"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "MISMATCH",
+    "details": "Unexpected field: agee"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "FIXED",
+    "details": "Mapped 'agee' \u2192 'age'"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "SUCCESS",
+    "details": "Final data: {'name': 'John', 'age': 25}"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "schema_mismatch"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['generate', 'validate', 're_prompt']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing AI workflow"
+  },
+  {
+    "step": "AI",
+    "status": "START",
+    "details": "Generating response"
+  },
+  {
+    "step": "AI",
+    "status": "GENERATED",
+    "details": "The capital of India is Mumbai"
+  },
+  {
+    "step": "AI",
+    "status": "HALLUCINATION",
+    "details": "Incorrect response detected"
+  },
+  {
+    "step": "AI",
+    "status": "CORRECTED",
+    "details": "The capital of India is New Delhi"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "ai_hallucination"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['retry', 'fallback_api', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing API workflow"
+  },
+  {
+    "step": "API",
+    "status": "START",
+    "details": "Calling primary API"
+  },
+  {
+    "step": "API",
+    "status": "SUCCESS",
+    "details": "Primary API worked"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "api_failure"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['detect_schema', 'llm_remap', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing Schema workflow"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "START",
+    "details": "Checking schema consistency"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "MISMATCH",
+    "details": "Unexpected field: agee"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "FIXED",
+    "details": "Mapped 'agee' \u2192 'age'"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "SUCCESS",
+    "details": "Final data: {'name': 'John', 'age': 25}"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "schema_mismatch"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['generate', 'validate', 're_prompt']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing AI workflow"
+  },
+  {
+    "step": "AI",
+    "status": "START",
+    "details": "Generating response from LLM"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['retry', 'fallback_api', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing API workflow"
+  },
+  {
+    "step": "API",
+    "status": "START",
+    "details": "Calling primary API"
+  },
+  {
+    "step": "API",
+    "status": "SUCCESS",
+    "details": "Primary API worked"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "api_failure"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['detect_schema', 'llm_remap', 'validate']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing Schema workflow"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "START",
+    "details": "Checking schema consistency"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "MISMATCH",
+    "details": "Unexpected field: agee"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "FIXED",
+    "details": "Mapped 'agee' \u2192 'age'"
+  },
+  {
+    "step": "SCHEMA",
+    "status": "SUCCESS",
+    "details": "Final data: {'name': 'John', 'age': 25}"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "schema_mismatch"
+  },
+  {
+    "step": "RAG",
+    "status": "USED",
+    "details": "Recovered successfully"
+  },
+  {
+    "step": "Planner",
+    "status": "CREATED",
+    "details": "['generate', 'validate', 're_prompt']"
+  },
+  {
+    "step": "SYSTEM",
+    "status": "START",
+    "details": "Executing AI workflow"
+  },
+  {
+    "step": "AI",
+    "status": "START",
+    "details": "Generating response from LLM"
+  },
+  {
+    "step": "AI",
+    "status": "GENERATED",
+    "details": "The capital of India is New Delhi."
+  },
+  {
+    "step": "AI",
+    "status": "SUCCESS",
+    "details": "Response is valid"
+  },
+  {
+    "step": "RAG",
+    "status": "STORED",
+    "details": "ai_hallucination"
+  }
+]

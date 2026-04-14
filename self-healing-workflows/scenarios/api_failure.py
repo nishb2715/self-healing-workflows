@@ -1,10 +1,10 @@
 import requests
 import random
 from config import OPENWEATHER_API_KEY
-from workflows.recovery_engine import execute_with_recovery
-from workflows.diagnosis_agent import diagnose
-from workflows.monitor import capture_failure, log_info
-from workflows.validator import validate
+from core.monitor import monitor
+from core.diagnosis_agent import diagnose
+from core.recovery_engine import recover
+from core.validator import validate
 
 PRIMARY_URL = "https://api.openweathermap.org/data/2.5/weather"
 BACKUP_URL  = "https://wttr.in/London?format=j1"
