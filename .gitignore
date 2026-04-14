@@ -1,8 +1,44 @@
-venv/
-.env
-selfH
-logs/
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+
+# Virtual environment
+self/
+venv/
+env/
+.env/
+
+# Environment variables
+.env
+*.env
+
+# Logs & data
+observability/logs.json
+rag/vector_store.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code
 .vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+
+# Airflow (if used later)
+airflow/
+airflow.db
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.log
+*.tmp
